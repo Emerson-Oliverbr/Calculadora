@@ -9,8 +9,15 @@ namespace Calculadora
             Console.Clear();
             Console.Write("Primeiro valor: ");
             float valor1 = float.Parse(Console.ReadLine());
+            Console.Write("Segundo Valor: ");
+            float valor2 = float.Parse(Console.ReadLine());
+            Console.WriteLine();
 
-            Console.WriteLine(valor1);
+            float resultado = valor1 + valor2;
+            Console.WriteLine($"O resultado da soma é: {resultado}");
+
+            Console.ReadKey();
+
         }
     }
 }

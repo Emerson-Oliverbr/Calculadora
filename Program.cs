@@ -6,7 +6,20 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {     
-            Multiplicacao();            
+            Menu();            
+        }
+
+        static void Menu()
+        {
+            Console.Clear();
+            Console.WriteLine("Qual operação matematica deseja usar?");
+            Console.WriteLine("1 = Soma");
+            Console.WriteLine("1 = Subtração");
+            Console.WriteLine("1 = Divisão");
+            Console.WriteLine("1 = Multiplicação");
+            Console.WriteLine("-------------------------------------");
+            Console.Write("Selecione uma opção: ");
+            short resposta = short.Parse(Console.ReadLine());
         }
 
         static void Soma() 
